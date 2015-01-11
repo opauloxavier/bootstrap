@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <title>Form</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,28 +17,88 @@
     <![endif]-->
   </head>
   <body>
-    <!--<div class="dropdown">
-	    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-	    Testando
-	    <span class="caret"></span>
-	    </button>
-	    <ul class="dropdown-menu">
-	    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-		</ul>
-	</div>-->
 
-<div id="tudao" class="container-fluid">
+<div id="wrapper" class="container">
+
+<div id="form" class="row-fluid col-md-10">
+<form class="form-horizontal" action="form.php" method="POST">
+<fieldset>
+	<div class="form-group row">
+	<legend class="col-md-10">Formulario</legend>
+	</div>
+		<div class="form-group row">
+			<label class="col-md-2 control-label">Name</label>
+		<div class="col-md-4">
+			<input type="text" id="name" name="name" placeholder="Tell us your name" class="form-control input-md" >
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label class="col-md-2 control-label">Age</label>
+	<div class="col-md-4">
+			<input type="text" id="age" name="age" placeholder="Tell us your age" class="form-control input-md">
+		</div>
+	</div>
+		
+		<div class="form-group row">
+
+		<label class="col-md-2 control-label">Password</label>
+	<div class="col-md-4">
+			<input type="password" id="password" name="password" placeholder="Choose a password" class="form-control input-md">
+		</div>	
+
+	<div class="col-md-4">
+			<input type="password" id="password-again" placeholder="Please repeat your password" class="form-control input-md" required="true">
+		</div>	
+	</div>
 
 
-<div class="row">
-  <div class="col-md-8"><button class="btn btn-success btn-block"><span class="glyphicon glyphicon-star" aria-hidden="true" aria-label="Right Align"></span> Success</button></div>
-  <div class="col-md-4"><button class="btn btn-danger btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true" aria-label="Left Align"></span> Fail</button></div>
+	<div class="form-group row">
+			<label class="col-md-2 control-label">E-mail</label>
+		<div class="col-md-4">
+			<input type="text" id="email" name="email" placeholder="Inform your e-mail" class="form-control input-md" required="true">
+			</div>
+	</div>
+
+	<div class="form-group row">
+		<label class="col-md-2 control-label" for="radios">Gender</label>
+		<div class="col-md-4">
+			<div class="radio">
+				<label for="radios-0">
+				<input type="radio" name="radios" id="male" value="1" checked="checked">
+					Male
+				</label>
+			</div>
+
+			<div class="radio">
+				<label for="radios-1">
+				<input type="radio" name="radios" id="male" value="2">
+					Female
+				</label>
+			</div>
+	</div>
+	</div>
+	<div class="form-group row">
+	<label class="col-md-2 control-label">Additional Info</label>
+		<div class="col-md-8">
+			<textarea type="text-area" class="form-control" id="info" name="info" placeholder="Feel free to add any comments or thoughts"></textarea>
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<div class="col-md-2 col-md-offset-8 control-label">
+			<button type="submit" id="button1id" name="button1id" class="btn btn-success">Enviar</button>
+		</div>
+	</div>
+
+
+</fieldset>
+
+
+
+</form>
 </div>
 </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
